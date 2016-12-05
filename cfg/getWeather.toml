@@ -1,0 +1,51 @@
+# logtype can take: debug, info, notice, warning, error, critical
+# warning is the default
+logtype = "debug"
+
+saveDirPath = ""
+
+[[Image]]
+url = "http://oiswww.eumetsat.org/IPPS/html/latestImages/EUMETSAT_MSG_RGB-naturalcolor-westernEurope.jpg"
+pathSav = "/tmp/image_sat.jpg"
+update = 3600
+crop = "0x110x1274x657"
+resize = "1274x547"
+
+[[Image]]
+url = "http://marine.meteoconsult.fr/carte/meteo-marine/frontologie_0.php"
+search = "http://images.meteoconsult.fr/images/meteoconsult2014/cartes/marine/frontologie/"
+pathSav = "/tmp/image_marine.jpg"
+update = 3600
+crop = "0x0x960x528"
+resize = "960x528"
+
+[[Image]]
+url = "http://meteociel.fr/cartes_obs/temp.png"
+pathSav = "/tmp/temperatures.png"
+update = 1800
+crop = "99x140x646x648"
+resize = "547x508"
+
+[[Image]]
+url = "http://meteociel.fr/cartes_obs/vent.png"
+pathSav = "/tmp/vent.png"
+update = 1800
+crop = "99x140x646x648"
+resize = "547x508"
+
+[[Image]]
+url = "http://www.infoclimat.fr/cartes-meteo-temps-reel-images-satellites-infrarouge-visible-haute-resolution.html?i=radar"
+search = "http://www.infoclimat.fr/api/"
+pathSav = "/tmp/pluie.jpg"
+update = 1000
+crop = "0x0x900x866"
+resize = "900x866"
+
+[[Image]]
+url = "http://www.meteoalarm.eu/fr_FR/0/0/FR-France.html"
+search = "/maps/FR-"
+baseUrl = "http://www.meteoalarm.eu"
+pathSav = "/tmp/alerte.png"
+update = 7200
+crop = "10x4x552x536"
+resize = "542x532"
